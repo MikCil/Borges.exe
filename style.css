@@ -1,0 +1,168 @@
+body {
+    font-family: 'Spectral', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background: #111;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.logo {
+  font-family: 'ZCOOL QingKe HuangYou', cursive;
+  font-size: 2.5em;
+  font-weight: 400;
+}
+
+
+main {
+    max-width: 960px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+section {
+    background-color: #fff;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+
+.intro {
+    position: relative;
+    overflow: hidden; /* To contain the background */
+    padding-bottom: 6rem;
+}
+
+.labyrinth-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('labyrinth.png'); /*Replace with your labyrinth image */
+    background-repeat: repeat;
+    background-size: 400px; /* Adjust to your preference */
+    opacity: 0.2;
+    z-index: 0;
+    filter: grayscale(100%);
+}
+
+
+.intro .content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+
+.intro h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+}
+
+.intro p.highlight {
+    font-style: italic;
+    color: #555;
+    margin-top: 1rem;
+    font-weight: 500;
+}
+
+
+.instructions h2, .purpose h2{
+  font-family: 'Roboto Slab', serif;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+
+.steps {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+.step {
+    display: flex;
+    align-items: flex-start; /* Align items to the top */
+    text-align: left;
+    margin-bottom: 1.5rem;
+    max-width: 250px;
+}
+
+.step-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    background-color: #111;
+    color: #fff;
+    border-radius: 50%;
+    margin-right: 10px;
+    font-weight: 700;
+}
+
+.step p{
+  margin: 0; /* remove default margin on p tags */
+}
+
+.time-estimate {
+  margin-top: 1.5rem;
+  text-align: center;
+  font-style: italic;
+  color: #666;
+}
+
+.purpose p {
+  margin-bottom: 1.5rem;
+}
+
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #eee;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    main {
+        padding: 0 0.5rem;
+    }
+
+    .intro h2 {
+        font-size: 2rem;
+    }
+
+    .steps{
+      flex-direction: column;
+    }
+
+    .step {
+        margin-bottom: 1rem;
+        max-width: 100%;
+    }
+}
+
+/*form section styling*/
+.form-section{
+   text-align:center;
+}
+
+.form-section iframe{
+   max-width: 100%;
+}
